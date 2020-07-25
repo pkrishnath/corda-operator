@@ -1,0 +1,24 @@
+# permissions for end users to edit cordas.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: corda-editor-role
+rules:
+- apiGroups:
+  - corda.kubecorda.com
+  resources:
+  - cordas
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - corda.kubecorda.com
+  resources:
+  - cordas/status
+  verbs:
+  - get

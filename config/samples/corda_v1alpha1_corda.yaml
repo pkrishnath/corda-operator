@@ -1,0 +1,7 @@
+apiVersion: corda.kubecorda.com/v1alpha1
+kind: Corda
+metadata:
+  name: corda-sample
+spec:
+  # Add fields here
+  foo: bar

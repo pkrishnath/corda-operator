@@ -1,0 +1,11 @@
+domain: kubecorda.com
+layout: go.kubebuilder.io/v2
+multigroup: true
+repo: github.com/pkrishnath/corda-operator
+resources:
+- group: corda
+  kind: Corda
+  version: v1alpha1
+version: "2"
+plugins:
+  go.operator-sdk.io/v2-alpha: {}
